@@ -19,11 +19,6 @@ plt.show()
 f = int(input("Enter the down sampling rate f :"))
 print(f)
 img2 = np.zeros((m//f, n//f), dtype= int)
-# Assign the down sampled values from the original
-# image according to the down sampling frequency.
-# For example, if the down sampling rate f=2, take
-# pixel values from alternate rows and columns
-# and assign them in the matrix created above
 for i in range(0, m, f):
     for j in range(0, n, f):
         try:
